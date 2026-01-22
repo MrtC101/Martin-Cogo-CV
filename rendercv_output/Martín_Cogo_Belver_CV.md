@@ -3,7 +3,7 @@
 - Phone: +54 9 261 543 7341
 - Email: [martincogo3@gmail.com](mailto:martincogo3@gmail.com)
 - Location: Godoy Cruz, Mendoza, Argentina
-- Website: [mrtc101.github.io](https://mrtc101.github.io/)
+- Website: [mrtc101.github.ioMartin-Cogo-CV](https://mrtc101.github.io/Martin-Cogo-CV/)
 - LinkedIn: [martin-cogo](https://linkedin.com/in/martin-cogo)
 - GitHub: [MrtC101](https://github.com/MrtC101)
 

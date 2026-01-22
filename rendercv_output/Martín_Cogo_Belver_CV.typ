@@ -91,7 +91,7 @@
   [#connection-with-icon("location-dot")[Godoy Cruz, Mendoza, Argentina]],
   [#link("mailto:martincogo3@gmail.com", icon: false, if-underline: false, if-color: false)[#connection-with-icon("envelope")[martincogo3\@gmail.com]]],
   [#link("tel:+54-9-261-543-7341", icon: false, if-underline: false, if-color: false)[#connection-with-icon("phone")[0261 15-543-7341]]],
-  [#link("https://mrtc101.github.io/", icon: false, if-underline: false, if-color: false)[#connection-with-icon("link")[mrtc101.github.io]]],
+  [#link("https://mrtc101.github.io/Martin-Cogo-CV/", icon: false, if-underline: false, if-color: false)[#connection-with-icon("link")[mrtc101.github.io\/Martin-Cogo-CV]]],
   [#link("https://linkedin.com/in/martin-cogo", icon: false, if-underline: false, if-color: false)[#connection-with-icon("linkedin")[martin-cogo]]],
   [#link("https://github.com/MrtC101", icon: false, if-underline: false, if-color: false)[#connection-with-icon("github")[MrtC101]]],
 )
