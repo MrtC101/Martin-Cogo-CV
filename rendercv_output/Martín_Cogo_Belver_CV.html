@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -48,93 +48,100 @@
         <li>LinkedIn: <a href="https://linkedin.com/in/martin-cogo">martin-cogo</a></li>
         <li>GitHub: <a href="https://github.com/MrtC101">MrtC101</a></li>
         </ul>
-        <h1>Experiencia Laboral</h1>
+        <h1>Experience</h1>
         <h2><strong><a href="https://mindcolab.com/">Mind Colab</a></strong>, Computer Science Engineer</h2>
-        <p>Jul 2024 – presente</p>
-        <p>Desarrollo de un motor de inferencia en tiempo real basado en pipelines de GStreamer, capaz de procesar hasta 6 streams RTSP en paralelo a 720p y 25 FPS, manteniendo frame drop &lt; 1% bajo carga. El sistema adopta una arquitectura multiproceso con IPC mediante memoria compartida, orientada a minimizar copias innecesarias y reducir latencia.</p>
+        <p>July 2024 – present</p>
+        <p>1 year 7 months</p>
+        <p>Designed and implemented a real-time inference engine built on GStreamer pipelines, capable of processing up to 6 parallel RTSP streams at 720p and 25 FPS, maintaining frame drop below 1% under load. The system follows a multi-process architecture with shared-memory IPC to minimize unnecessary copies and reduce end-to-end latency.</p>
         <ul>
         <li>
-        <p><strong>Gestión de flujo</strong>: Manejo de backpressure mediante colas en GStreamer para sostener throughput estable en escenarios de carga concurrente.</p>
+        <p><strong>Flow control</strong>: Implemented backpressure handling using GStreamer queues to sustain stable throughput under concurrent load.</p>
         </li>
         <li>
-        <p><strong>Stack de aceleración</strong>: Implementación en GPU utilizando NVIDIA DeepStream, buffers NVMM, kernels CUDA (Numba) y OpenCV con soporte CUDA para preprocesamiento.</p>
+        <p><strong>Acceleration stack</strong>: GPU-based implementation leveraging NVIDIA DeepStream, NVMM buffers, CUDA kernels (Numba), and CUDA-enabled OpenCV for preprocessing.</p>
         </li>
         <li>
-        <p><strong>Optimización de inferencia</strong>: Ejecución de modelos YOLO/PyTorch con transferencia de frames mayoritariamente en GPU, reduciendo overhead CPU↔GPU.</p>
+        <p><strong>Inference optimization</strong>: Executed YOLO/PyTorch models with frames kept predominantly on GPU, reducing CPU↔GPU transfer overhead.</p>
         </li>
         <li>
-        <p><strong>Lifecycle y operación</strong>: Soporte de restart controlado, hot-reload de configuración mediante DSL propio y graceful shutdown en entornos 24/7.</p>
+        <p><strong>Lifecycle &amp; operations</strong>: Supported controlled restarts, hot configuration reloads via a custom DSL, and graceful shutdowns in 24/7 environments.</p>
         </li>
         <li>
-        <p><strong>Observabilidad</strong>: Medición de latencia parcial por pipeline y monitoreo de uso de GPU, VRAM, RAM y CPU bajo carga sostenida.</p>
+        <p><strong>Observability</strong>: Measured per-stage pipeline latency and monitored GPU, VRAM, RAM, and CPU utilization under sustained load.</p>
         </li>
         <li>
-        <p><strong>Impacto técnico</strong>: Migración desde una solución CPU-bound a GPU, habilitando retransmisión de streams en tiempo real donde previamente no era viable.</p>
+        <p><strong>Technical impact</strong>: Migrated from a CPU-bound solution to GPU acceleration, enabling real-time stream retransmission where it was previously not feasible.</p>
+        </li>
+        <li>
+        <p><a href="https://mrtc101.github.io/stream-inference-engine/">View Project</a></p>
         </li>
         </ul>
-        <h2><strong><a href="https://www.godoycruz.gob.ar/">Municipalidad de Godoy Cruz</a></strong>, Desarrollador Web</h2>
-        <p>Jun 2025 – presente</p>
-        <p>Interfaz web para chat con LLM de uso interno para consulta semántica de normativas municipales.</p>
+        <h2><strong><a href="https://www.godoycruz.gob.ar/">Municipality of Godoy Cruz</a></strong>, Web Developer</h2>
+        <p>June 2025 – present</p>
+        <p>8 months</p>
+        <p>Developed an internal web interface for chatting with an LLM to enable semantic querying of municipal regulations.</p>
         <ul>
         <li>
-        <p><strong>Stack frontend</strong>: React, Tailwind CSS, Bun.</p>
+        <p><strong>Frontend stack</strong>: React, Tailwind CSS, Bun.</p>
         </li>
         <li>
-        <p><a href="https://github.com/AgustinAguilera2323/digesto-semantic-chat">Ver Proyecto</a></p>
+        <p><a href="https://github.com/MrtC101/digesto-semantic-chat">View Project</a></p>
         </li>
         </ul>
-        <h2><strong><a href="https://klari.ai/">Klari Inc.</a></strong>, Científico de Datos</h2>
-        <p>Ene 2025 – Feb 2025</p>
-        <p>Diseño e implementación de un sistema de análisis semántico de conversaciones generadas por un chatbot basado en LLM, orientado a extraer patrones temáticos y generar reportes accionables sobre comportamiento y calidad de interacción.</p>
+        <h2><strong><a href="https://klari.ai/">Klari Inc.</a></strong>, Data Scientist</h2>
+        <p>Jan 2025 – Feb 2025</p>
+        <p>2 months</p>
+        <p>Designed and implemented a semantic analysis system for conversations generated by an LLM-based chatbot, aimed at extracting thematic patterns and producing actionable reports on user behavior and interaction quality.</p>
         <ul>
         <li>
-        <p><strong>Pipeline NLP</strong>: Representación semántica de conversaciones mediante embeddings.</p>
+        <p><strong>NLP pipeline</strong>: Semantic representation of conversations using embeddings.</p>
         </li>
         <li>
-        <p><strong>Análisis temático</strong>: Clustering no supervisado para extracción de patrones conversacionales.</p>
+        <p><strong>Thematic analysis</strong>: Unsupervised clustering to extract conversational patterns.</p>
         </li>
         </ul>
-        <h2><strong><a href="https://sites.google.com/view/cicda/home">Grupo CICDa</a></strong>, Investigación de Tesis</h2>
-        <p>Ene 2024 – Ene 2025</p>
-        <p>Desarrollo de un trabajo de investigación orientado a publicación, enfocado en la segmentación de imágenes satelitales para la detección y estimación de daños en edificaciones posteriores a desastres naturales, mediante comparación temporal de imágenes y modelos de deep learning con arquitectura siamesa.</p>
+        <h2><strong><a href="https://sites.google.com/view/cicda/home">CICDa Research Group</a></strong>, Thesis Research</h2>
+        <p>Jan 2024 – Jan 2025</p>
+        <p>1 year 1 month</p>
+        <p>Conducted publication-oriented research focused on satellite image segmentation for post-disaster building damage detection and estimation, using temporal image comparison and Siamese deep learning architectures.</p>
         <ul>
         <li>
-        <p><strong>Dataset xBD</strong>: Entrenamiento sobre ~2400 imágenes satelitales VHR para tareas de Building Damage Assessment.</p>
+        <p><strong>xBD dataset</strong>: Trained on ~2,400 VHR satellite images for Building Damage Assessment tasks.</p>
         </li>
         <li>
-        <p><strong>Pipeline end-to-end</strong>: Preprocesamiento, entrenamiento, inferencia y post-procesamiento para segmentación semántica y detección de cambios estructurales multitemporales.</p>
+        <p><strong>End-to-end pipeline</strong>: Preprocessing, training, inference, and post-processing for semantic segmentation and multitemporal structural change detection.</p>
         </li>
         <li>
-        <p><strong>Modelado de visión</strong>: Entrenamiento de modelos de deep learning para segmentación semántica de edificaciones post-desastre.</p>
+        <p><strong>Computer vision modeling</strong>: Trained deep learning models for post-disaster building semantic segmentation.</p>
         </li>
         <li>
-        <p><strong>Evaluación experimental</strong>: Análisis cuantitativo mediante métricas de clasificación y segmentación (Precision, Recall, F1-score).</p>
+        <p><strong>Experimental evaluation</strong>: Quantitative analysis using classification and segmentation metrics (Precision, Recall, F1-score).</p>
         </li>
         <li>
-        <p><strong>Cómputo</strong>: Entrenamiento ejecutado en clúster HPC con GPU NVIDIA Tesla V100.</p>
+        <p><strong>Compute</strong>: Training executed on a High Performance Computing cluster with NVIDIA Tesla V100 GPUs.</p>
         </li>
         <li>
-        <p><a href="https://github.com/MrtC101/Thesis_DL_for_BDA">Ver Proyecto</a></p>
+        <p><a href="https://github.com/MrtC101/Thesis_DL_for_BDA">View Project</a></p>
         </li>
         </ul>
-        <h1>Educación</h1>
-        <h2><strong>Universidad Nacional de Cuyo</strong>, Licenciatura en Ciencias de la Computación</h2>
+        <h1>Education</h1>
+        <h2><strong>National University of Cuyo</strong>, Bachelor of Computer Science</h2>
         <p>2020 – 2024</p>
-        <h1>Habilidades Técnicas</h1>
-        <p><strong>Lenguajes:</strong> Python, JavaScript, C/C++</p>
-        <p><strong>IA &amp; ML:</strong> PyTorch, TensorFlow, Scikit-learn</p>
-        <p><strong>Visión &amp; Datos:</strong> OpenCV, CUDA, Gstreamer, NVIDIA DeepStream, Pandas, NumPy</p>
-        <p><strong>Herramientas:</strong> Docker, Linux, Git, FastAPI, Bun, React, Tailwind</p>
-        <h1>Logros Y Idiomas</h1>
+        <h1>Technical Skills</h1>
+        <p><strong>Programming Languages:</strong> Python, JavaScript, C/C++</p>
+        <p><strong>AI &amp; ML:</strong> PyTorch, TensorFlow, Scikit-learn</p>
+        <p><strong>Vision &amp; Data:</strong> OpenCV, CUDA, GStreamer, NVIDIA DeepStream, Pandas, NumPy</p>
+        <p><strong>Tools:</strong> Docker, Linux, Git, FastAPI, Bun, React, Tailwind</p>
+        <h1>Achievements and Languages</h1>
         <ul>
         <li>
-        <p>Medalla a mejor promedio promocion 2024 de la carrera Licenciatura en ciencias de la computación.</p>
+        <p>Highest GPA (8.7 on a ten-point scale) in the Computer Science program, Class of 2024.</p>
         </li>
         <li>
-        <p>Cuadro de honor (Top 15 promedios): Facultad de Ingeniería UNCUYO, 2024.</p>
+        <p>Ranked among the top 15 engineering students at UNCUYO (2024), based on academic GPA.</p>
         </li>
         <li>
-        <p>Inglés: Nivel B2 (Certificado por Cambridge).</p>
+        <p>English: Upper-Intermediate (B2), Cambridge certified.</p>
         </li>
         </ul>
     </article>

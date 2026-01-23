@@ -8,81 +8,99 @@
 - GitHub: [MrtC101](https://github.com/MrtC101)
 
 
-# Experiencia Laboral
+# Experience
 ## **[Mind Colab](https://mindcolab.com/)**, Computer Science Engineer
 
-Jul 2024 – presente
-
-Desarrollo de un motor de inferencia en tiempo real basado en pipelines de GStreamer, capaz de procesar hasta 6 streams RTSP en paralelo a 720p y 25 FPS, manteniendo frame drop < 1% bajo carga. El sistema adopta una arquitectura multiproceso con IPC mediante memoria compartida, orientada a minimizar copias innecesarias y reducir latencia.
+July 2024 – present
 
 
 
-- **Gestión de flujo**: Manejo de backpressure mediante colas en GStreamer para sostener throughput estable en escenarios de carga concurrente.
+1 year 7 months
 
-- **Stack de aceleración**: Implementación en GPU utilizando NVIDIA DeepStream, buffers NVMM, kernels CUDA (Numba) y OpenCV con soporte CUDA para preprocesamiento.
-
-- **Optimización de inferencia**: Ejecución de modelos YOLO/PyTorch con transferencia de frames mayoritariamente en GPU, reduciendo overhead CPU↔GPU.
-
-- **Lifecycle y operación**: Soporte de restart controlado, hot-reload de configuración mediante DSL propio y graceful shutdown en entornos 24/7.
-
-- **Observabilidad**: Medición de latencia parcial por pipeline y monitoreo de uso de GPU, VRAM, RAM y CPU bajo carga sostenida.
-
-- **Impacto técnico**: Migración desde una solución CPU-bound a GPU, habilitando retransmisión de streams en tiempo real donde previamente no era viable.
+Designed and implemented a real-time inference engine built on GStreamer pipelines, capable of processing up to 6 parallel RTSP streams at 720p and 25 FPS, maintaining frame drop below 1% under load. The system follows a multi-process architecture with shared-memory IPC to minimize unnecessary copies and reduce end-to-end latency.
 
 
 
-## **[Municipalidad de Godoy Cruz](https://www.godoycruz.gob.ar/)**, Desarrollador Web
+- **Flow control**: Implemented backpressure handling using GStreamer queues to sustain stable throughput under concurrent load.
 
-Jun 2025 – presente
+- **Acceleration stack**: GPU-based implementation leveraging NVIDIA DeepStream, NVMM buffers, CUDA kernels (Numba), and CUDA-enabled OpenCV for preprocessing.
 
-Interfaz web para chat con LLM de uso interno para consulta semántica de normativas municipales.
+- **Inference optimization**: Executed YOLO/PyTorch models with frames kept predominantly on GPU, reducing CPU↔GPU transfer overhead.
 
+- **Lifecycle & operations**: Supported controlled restarts, hot configuration reloads via a custom DSL, and graceful shutdowns in 24/7 environments.
 
+- **Observability**: Measured per-stage pipeline latency and monitored GPU, VRAM, RAM, and CPU utilization under sustained load.
 
-- **Stack frontend**: React, Tailwind CSS, Bun.
+- **Technical impact**: Migrated from a CPU-bound solution to GPU acceleration, enabling real-time stream retransmission where it was previously not feasible.
 
-- [Ver Proyecto](https://github.com/AgustinAguilera2323/digesto-semantic-chat)
-
-
-
-## **[Klari Inc.](https://klari.ai/)**, Científico de Datos
-
-Ene 2025 – Feb 2025
-
-Diseño e implementación de un sistema de análisis semántico de conversaciones generadas por un chatbot basado en LLM, orientado a extraer patrones temáticos y generar reportes accionables sobre comportamiento y calidad de interacción.
+- [View Project](https://mrtc101.github.io/stream-inference-engine/)
 
 
 
-- **Pipeline NLP**: Representación semántica de conversaciones mediante embeddings.
+## **[Municipality of Godoy Cruz](https://www.godoycruz.gob.ar/)**, Web Developer
 
-- **Análisis temático**: Clustering no supervisado para extracción de patrones conversacionales.
-
-
-
-## **[Grupo CICDa](https://sites.google.com/view/cicda/home)**, Investigación de Tesis
-
-Ene 2024 – Ene 2025
-
-Desarrollo de un trabajo de investigación orientado a publicación, enfocado en la segmentación de imágenes satelitales para la detección y estimación de daños en edificaciones posteriores a desastres naturales, mediante comparación temporal de imágenes y modelos de deep learning con arquitectura siamesa.
+June 2025 – present
 
 
 
-- **Dataset xBD**: Entrenamiento sobre ~2400 imágenes satelitales VHR para tareas de Building Damage Assessment.
+8 months
 
-- **Pipeline end-to-end**: Preprocesamiento, entrenamiento, inferencia y post-procesamiento para segmentación semántica y detección de cambios estructurales multitemporales.
-
-- **Modelado de visión**: Entrenamiento de modelos de deep learning para segmentación semántica de edificaciones post-desastre.
-
-- **Evaluación experimental**: Análisis cuantitativo mediante métricas de clasificación y segmentación (Precision, Recall, F1-score).
-
-- **Cómputo**: Entrenamiento ejecutado en clúster HPC con GPU NVIDIA Tesla V100.
-
-- [Ver Proyecto](https://github.com/MrtC101/Thesis_DL_for_BDA)
+Developed an internal web interface for chatting with an LLM to enable semantic querying of municipal regulations.
 
 
 
-# Educación
-## **Universidad Nacional de Cuyo**, Licenciatura en Ciencias de la Computación
+- **Frontend stack**: React, Tailwind CSS, Bun.
+
+- [View Project](https://github.com/MrtC101/digesto-semantic-chat)
+
+
+
+## **[Klari Inc.](https://klari.ai/)**, Data Scientist
+
+Jan 2025 – Feb 2025
+
+
+
+2 months
+
+Designed and implemented a semantic analysis system for conversations generated by an LLM-based chatbot, aimed at extracting thematic patterns and producing actionable reports on user behavior and interaction quality.
+
+
+
+- **NLP pipeline**: Semantic representation of conversations using embeddings.
+
+- **Thematic analysis**: Unsupervised clustering to extract conversational patterns.
+
+
+
+## **[CICDa Research Group](https://sites.google.com/view/cicda/home)**, Thesis Research
+
+Jan 2024 – Jan 2025
+
+
+
+1 year 1 month
+
+Conducted publication-oriented research focused on satellite image segmentation for post-disaster building damage detection and estimation, using temporal image comparison and Siamese deep learning architectures.
+
+
+
+- **xBD dataset**: Trained on ~2,400 VHR satellite images for Building Damage Assessment tasks.
+
+- **End-to-end pipeline**: Preprocessing, training, inference, and post-processing for semantic segmentation and multitemporal structural change detection.
+
+- **Computer vision modeling**: Trained deep learning models for post-disaster building semantic segmentation.
+
+- **Experimental evaluation**: Quantitative analysis using classification and segmentation metrics (Precision, Recall, F1-score).
+
+- **Compute**: Training executed on a High Performance Computing cluster with NVIDIA Tesla V100 GPUs.
+
+- [View Project](https://github.com/MrtC101/Thesis_DL_for_BDA)
+
+
+
+# Education
+## **National University of Cuyo**, Bachelor of Computer Science
 
 
 
@@ -90,18 +108,18 @@ Desarrollo de un trabajo de investigación orientado a publicación, enfocado en
 
 
 
-# Habilidades Técnicas
-**Lenguajes:** Python, JavaScript, C/C++
+# Technical Skills
+**Programming Languages:** Python, JavaScript, C/C++
 
-**IA & ML:** PyTorch, TensorFlow, Scikit-learn
+**AI & ML:** PyTorch, TensorFlow, Scikit-learn
 
-**Visión & Datos:** OpenCV, CUDA, Gstreamer, NVIDIA DeepStream, Pandas, NumPy
+**Vision & Data:** OpenCV, CUDA, GStreamer, NVIDIA DeepStream, Pandas, NumPy
 
-**Herramientas:** Docker, Linux, Git, FastAPI, Bun, React, Tailwind
+**Tools:** Docker, Linux, Git, FastAPI, Bun, React, Tailwind
 
-# Logros Y Idiomas
-- Medalla a mejor promedio promocion 2024 de la carrera Licenciatura en ciencias de la computación.
+# Achievements and Languages
+- Highest GPA (8.7 on a ten-point scale) in the Computer Science program, Class of 2024.
 
-- Cuadro de honor (Top 15 promedios): Facultad de Ingeniería UNCUYO, 2024.
+- Ranked among the top 15 engineering students at UNCUYO (2024), based on academic GPA.
 
-- Inglés: Nivel B2 (Certificado por Cambridge).
+- English: Upper-Intermediate (B2), Cambridge certified.
