@@ -3,13 +3,13 @@
 - Phone: +54 9 261 543 7341
 - Email: [martincogo3@gmail.com](mailto:martincogo3@gmail.com)
 - Location: Godoy Cruz, Mendoza, Argentina
-- Website: [mrtc101.github.ioMartin-Cogo-CV](https://mrtc101.github.io/Martin-Cogo-CV/)
+- Website: [mrtc101.github.ioMartin-Cogo-CVindex.es](https://mrtc101.github.io/Martin-Cogo-CV/index.es)
 - LinkedIn: [martin-cogo](https://linkedin.com/in/martin-cogo)
 - GitHub: [MrtC101](https://github.com/MrtC101)
 
 
 # Experiencia Laboral
-## **[Mind Colab](https://mindcolab.com/)**, Computer Science Engineer
+## **[Mind Colab](https://mindcolab.com/)**, Computer Scientist
 
 Jul 2024 – presente
 
@@ -29,6 +29,8 @@ Desarrollo de un motor de inferencia en tiempo real basado en pipelines de GStre
 
 - **Impacto técnico**: Migración desde una solución CPU-bound a GPU, habilitando retransmisión de streams en tiempo real donde previamente no era viable.
 
+- [Ver Proyecto](https://mrtc101.github.io/stream-inference-engine/)
+
 
 
 ## **[Municipalidad de Godoy Cruz](https://www.godoycruz.gob.ar/)**, Desarrollador Web
@@ -41,7 +43,7 @@ Interfaz web para chat con LLM de uso interno para consulta semántica de normat
 
 - **Stack frontend**: React, Tailwind CSS, Bun.
 
-- [Ver Proyecto](https://github.com/AgustinAguilera2323/digesto-semantic-chat)
+- [Ver Proyecto](https://github.com/MrtC101/digesto-semantic-chat)
 
 
 

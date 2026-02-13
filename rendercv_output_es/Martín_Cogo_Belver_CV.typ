@@ -91,7 +91,7 @@
   [#connection-with-icon("location-dot")[Godoy Cruz, Mendoza, Argentina]],
   [#link("mailto:martincogo3@gmail.com", icon: false, if-underline: false, if-color: false)[#connection-with-icon("envelope")[martincogo3\@gmail.com]]],
   [#link("tel:+54-9-261-543-7341", icon: false, if-underline: false, if-color: false)[#connection-with-icon("phone")[0261 15-543-7341]]],
-  [#link("https://mrtc101.github.io/Martin-Cogo-CV/", icon: false, if-underline: false, if-color: false)[#connection-with-icon("link")[mrtc101.github.io\/Martin-Cogo-CV]]],
+  [#link("https://mrtc101.github.io/Martin-Cogo-CV/index.es", icon: false, if-underline: false, if-color: false)[#connection-with-icon("link")[mrtc101.github.io\/Martin-Cogo-CV\/index.es]]],
   [#link("https://linkedin.com/in/martin-cogo", icon: false, if-underline: false, if-color: false)[#connection-with-icon("linkedin")[martin-cogo]]],
   [#link("https://github.com/MrtC101", icon: false, if-underline: false, if-color: false)[#connection-with-icon("github")[MrtC101]]],
 )
@@ -101,7 +101,7 @@
 
 #regular-entry(
   [
-    #strong[#link("https://mindcolab.com/")[Mind Colab]], Computer Science Engineer
+    #strong[#link("https://mindcolab.com/")[Mind Colab]], Computer Scientist
 
     #summary[Desarrollo de un motor de inferencia en tiempo real basado en pipelines de GStreamer, capaz de procesar hasta 6 streams RTSP en paralelo a 720p y 25 FPS, manteniendo frame drop \< 1\% bajo carga. El sistema adopta una arquitectura multiproceso con IPC mediante memoria compartida, orientada a minimizar copias innecesarias y reducir latencia.]
 
@@ -116,6 +116,8 @@
     - #strong[Observabilidad]: Medición de latencia parcial por pipeline y monitoreo de uso de GPU, VRAM, RAM y CPU bajo carga sostenida.
 
     - #strong[Impacto técnico]: Migración desde una solución CPU-bound a GPU, habilitando retransmisión de streams en tiempo real donde previamente no era viable.
+
+    - #link("https://mrtc101.github.io/stream-inference-engine/")[Ver Proyecto]
 
   ],
   [
@@ -132,7 +134,7 @@
 
     - #strong[Stack frontend]: React, Tailwind CSS, Bun.
 
-    - #link("https://github.com/AgustinAguilera2323/digesto-semantic-chat")[Ver Proyecto]
+    - #link("https://github.com/MrtC101/digesto-semantic-chat")[Ver Proyecto]
 
   ],
   [
