@@ -8,12 +8,15 @@
 - GitHub: [MrtC101](https://github.com/MrtC101)
 
 
+# Perfil
+Licenciado en Ciencias de la Computación, enfocado en IA y resolución de problemas en Visión Computacional. Experiencia en el diseño e implementación de sistemas de inferencia en tiempo real sobre streams de video, y entrenamiento de modelos de deep learning para aplicaciones de visión computacional.
+
 # Experiencia Laboral
 ## **[Mind Colab](https://mindcolab.com/)**, Computer Scientist
 
-Jul 2024 – presente
+Jul 2025 – presente
 
-Desarrollo de un motor de inferencia en tiempo real basado en pipelines de GStreamer, capaz de procesar hasta 6 streams RTSP en paralelo a 720p y 25 FPS, manteniendo frame drop < 1% bajo carga. El sistema adopta una arquitectura multiproceso con IPC mediante memoria compartida, orientada a minimizar copias innecesarias y reducir latencia.
+Desarrollo de un motor de inferencia en tiempo real basado en pipelines de GStreamer, capaz de procesar hasta 6 streams RTSP en paralelo a hasta 1080p y 25 FPS, manteniendo frame drop < 1% bajo carga. El sistema adopta una arquitectura multiproceso con IPC mediante memoria compartida, orientada a minimizar copias innecesarias y reducir latencia.
 
 
 
@@ -47,7 +50,7 @@ Interfaz web para chat con LLM de uso interno para consulta semántica de normat
 
 
 
-## **[Klari Inc.](https://klari.ai/)**, Científico de Datos
+## **[Klari Inc.](https://klari.ai/)**, Científico de Datos (Pasantía, 200 hs)
 
 Ene 2025 – Feb 2025
 

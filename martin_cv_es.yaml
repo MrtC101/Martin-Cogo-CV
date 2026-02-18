@@ -19,14 +19,17 @@ cv:
     para aplicaciones de visión computacional.
 
   sections:
+    perfil:
+      - "Licenciado en Ciencias de la Computación, enfocado en IA y resolución de problemas en Visión Computacional. Experiencia en el diseño e implementación de sistemas de inferencia en tiempo real sobre streams de video, y entrenamiento de modelos de deep learning para aplicaciones de visión computacional."
+
     experiencia_laboral:
       - company: "[Mind Colab](https://mindcolab.com/)"
         position: Computer Scientist
-        start_date: 2024-07
+        start_date: 2025-07
         end_date: present
         summary: >
           Desarrollo de un motor de inferencia en tiempo real basado en pipelines de GStreamer,
-          capaz de procesar hasta 6 streams RTSP en paralelo a 720p y 25 FPS,
+          capaz de procesar hasta 6 streams RTSP en paralelo a hasta 1080p y 25 FPS,
           manteniendo frame drop < 1% bajo carga.
           El sistema adopta una arquitectura multiproceso con IPC mediante memoria compartida,
           orientada a minimizar copias innecesarias y reducir latencia.
@@ -50,7 +53,7 @@ cv:
           - "[Ver Proyecto](https://github.com/MrtC101/digesto-semantic-chat)"
 
       - company: "[Klari Inc.](https://klari.ai/)"
-        position: Científico de Datos
+        position: Científico de Datos (Pasantía, 200 hs)
         start_date: 2025-01
         end_date: 2025-02
         summary: >
@@ -118,7 +121,7 @@ design:
       alignment: left
       date_and_location_column_alignment: right
       font_family:
-        body: Source Sans 0
+        body: Source Sans 3
         name: Source Sans 3
         headline: Source Sans 3
         connections: Source Sans 3

@@ -1,152 +1,407 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
-cv:
-  name: Martín Cogo Belver
-  location: Godoy Cruz, Mendoza, Argentina
-  email: martincogo3@gmail.com
-  phone: "+54 9 261 543-7341"
-  website: "https://mrtc101.github.io/Martin-Cogo-CV/"
-  headline: Computer Science Degree
-  social_networks:
-    - network: LinkedIn
-      username: martin-cogo
-    - network: GitHub
-      username: MrtC101
+<!DOCTYPE html>
+<html lang="en">
 
-  summary: |
-    Computer Science graduate with focus on Artificial Intelligence and Computer Vision problem solving.
-    Proven experience designing and implementing real-time inference systems over video streams, as well as
-    training deep learning models for computer vision applications.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Martín Cogo CV</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5T0GTF490B"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5T0GTF490B');
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        
+        body { 
+            background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
+            min-height: 100vh;
+        }
+        
+        .section {
+            background: rgba(20, 20, 25, 0.5);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(139, 92, 246, 0.2);
+            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+            border-left: none;
+            border-right: none;
+            transition: all 0.3s ease;
+        }
+        
+        .section:hover {
+            background: rgba(20, 20, 25, 0.7);
+            border-top-color: rgba(139, 92, 246, 0.4);
+            border-bottom-color: rgba(139, 92, 246, 0.4);
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(139, 92, 246, 0.3) 50%, transparent 100%);
+            margin: 2rem 0;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(139, 92, 246, 0.15);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #c4b5fd;
+            transition: all 0.2s ease;
+        }
+        
+        .tag:hover {
+            background: rgba(139, 92, 246, 0.25);
+            border-color: rgba(139, 92, 246, 0.5);
+            transform: scale(1.05);
+        }
+        
+        .link-accent:hover {
+            color: #a78bfa;
+        }
+        
+        .timeline-dot {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+            border-radius: 50%;
+            box-shadow: 0 0 12px rgba(139, 92, 246, 0.6);
+        }
+    </style>
+</head>
 
-  sections:
-    experience:
-      - company: "[Mind Colab](https://mindcolab.com/)"
-        position: Computer Scientist
-        start_date: 2024-07
-        end_date: present
-        summary: >
-          Designed and implemented a real-time inference engine built on GStreamer pipelines,
-          capable of processing up to 6 parallel RTSP streams at 720p and 25 FPS,
-          maintaining frame drop below 1% under load.
-          The system follows a multi-process architecture with shared-memory IPC
-          to minimize unnecessary copies and reduce end-to-end latency.
-        highlights:
-          - "**Flow control**: Implemented backpressure handling using GStreamer queues to sustain stable throughput under concurrent load."
-          - "**Acceleration stack**: GPU-based implementation leveraging NVIDIA DeepStream, NVMM buffers, CUDA kernels (Numba), and CUDA-enabled OpenCV for preprocessing."
-          - "**Inference optimization**: Executed YOLO/PyTorch models with frames kept predominantly on GPU, reducing CPU↔GPU transfer overhead."
-          - "**Lifecycle & operations**: Supported controlled restarts, hot configuration reloads via a custom DSL, and graceful shutdowns in 24/7 environments."
-          - "**Observability**: Measured per-stage pipeline latency and monitored GPU, VRAM, RAM, and CPU utilization under sustained load."
-          - "**Technical impact**: Migrated from a CPU-bound solution to GPU acceleration, enabling real-time stream retransmission where it was previously not feasible."
-          - "[View Project](https://mrtc101.github.io/stream-inference-engine/)"
+<body class="p-4 md:p-8">
+    <div class="max-w-5xl mx-auto">
+        <!-- Header -->
+        <div class="section p-8 md:p-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Martín Cogo Belver</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-300">
+                <div class="flex items-center gap-2">
+                    <span class="text-violet-400">•</span>
+                    <span>+54 9 261 543 7341</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-violet-400">•</span>
+                    <a href="mailto:martincogo3@gmail.com" class="link-accent transition-colors">martincogo3@gmail.com</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-violet-400">•</span>
+                    <span>Godoy Cruz, Mendoza, Argentina</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-violet-400">•</span>
+                    <a href="https://mrtc101.github.io/Martin-Cogo-CV/index.es" class="link-accent transition-colors" target="_blank">mrtc101.github.io (Spanish)</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-violet-400">•</span>
+                    <a href="https://linkedin.com/in/martin-cogo" class="link-accent transition-colors" target="_blank">linkedin.com/in/martin-cogo</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-violet-400">•</span>
+                    <a href="https://github.com/MrtC101" class="link-accent transition-colors" target="_blank">github.com/MrtC101</a>
+                </div>
+            </div>
+        </div>
 
-      - company: "[Municipality of Godoy Cruz](https://www.godoycruz.gob.ar/)"
-        position: Web Developer
-        start_date: 2025-06
-        end_date: present
-        summary: >
-          Developed an internal web interface for chatting with an LLM to enable semantic querying
-          of municipal regulations.
-        highlights:
-          - "**Frontend stack**: React, Tailwind CSS, Bun."
-          - "[View Project](https://github.com/MrtC101/digesto-semantic-chat)"
+        <div class="section-divider"></div>
 
-      - company: "[Klari Inc.](https://klari.ai/)"
-        position: Data Scientist
-        start_date: 2025-01
-        end_date: 2025-02
-        summary: >
-          Designed and implemented a semantic analysis system for conversations generated by an LLM-based chatbot,
-          aimed at extracting thematic patterns and producing actionable reports on user behavior
-          and interaction quality.
-        highlights:
-          - "**NLP pipeline**: Semantic representation of conversations using embeddings."
-          - "**Thematic analysis**: Unsupervised clustering to extract conversational patterns."
+        <!-- Summary -->
+        <div class="section p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-white mb-4">Summary</h2>
+            <p class="text-gray-300 leading-relaxed">
+                Computer Science graduate with focus on Artificial Intelligence and Computer Vision problem solving.
+                Proven experience designing and implementing real-time inference systems over video streams,
+                as well as training deep learning models for computer vision applications.
+            </p>
+        </div>
 
-      - company: "[CICDa Research Group](https://sites.google.com/view/cicda/home)"
-        position: Thesis Research
-        start_date: 2024-01
-        end_date: 2025-01
-        summary: >
-          Conducted publication-oriented research focused on satellite image segmentation
-          for post-disaster building damage detection and estimation, using temporal image comparison
-          and Siamese deep learning architectures.
-        highlights:
-          - "**xBD dataset**: Trained on ~2,400 VHR satellite images for Building Damage Assessment tasks."
-          - "**End-to-end pipeline**: Preprocessing, training, inference, and post-processing for semantic segmentation and multitemporal structural change detection."
-          - "**Computer vision modeling**: Trained deep learning models for post-disaster building semantic segmentation."
-          - "**Experimental evaluation**: Quantitative analysis using classification and segmentation metrics (Precision, Recall, F1-score)."
-          - "**Compute**: Training executed on a High Performance Computing cluster with NVIDIA Tesla V100 GPUs."
-          - "[View Project](https://github.com/MrtC101/Thesis_DL_for_BDA)"
+        <div class="section-divider"></div>
 
-    education:
-      - institution: National University of Cuyo
-        area: Bachelor of Computer Science
-        study_type: Undergraduate Degree (GPA 8.7/10)
-        start_date: 2020
-        end_date: 2024
+        <!-- Experience -->
+        <div class="section p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-white mb-8">Experience</h2>
+            
+            <!-- Mind Colab -->
+            <div class="mb-10 timeline-dot">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-100">
+                            <a href="https://mindcolab.com/" class="link-accent transition-colors" target="_blank">Mind Colab</a>
+                            <span class="text-gray-400"> · Computer Scientist</span>
+                        </h3>
+                    </div>
+                    <span class="text-gray-400 text-sm md:text-base mt-1 md:mt-0">July 2025 – present</span>
+                </div>
+                
+                <p class="text-gray-300 mb-1 leading-relaxed">1 year 7 months</p>
 
-    technical_skills:
-      - label: Programming Languages
-        details: Python, JavaScript, C/C++
-      - label: AI & ML
-        details: PyTorch, TensorFlow, Scikit-learn
-      - label: Vision & Data
-        details: OpenCV, CUDA, GStreamer, NVIDIA DeepStream, Pandas, NumPy
-      - label: Tools
-        details: Docker, Linux, Git, FastAPI, Bun, React, Tailwind
+                <p class="text-gray-300 mb-4 leading-relaxed">
+                    Designed and implemented a real-time inference engine built on GStreamer pipelines,
+                    capable of processing up to 6 parallel RTSP streams at up to 1080p and 25 FPS,
+                    maintaining frame drop below 1% under load.
+                    The system follows a multi-process architecture with shared-memory IPC
+                    to minimize unnecessary copies and reduce end-to-end latency.
+                </p>
+                
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Flow control:</strong> Implemented backpressure handling using GStreamer queues to sustain stable throughput under concurrent load.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Acceleration stack:</strong> GPU-based implementation leveraging NVIDIA DeepStream, NVMM buffers, CUDA kernels (Numba), and CUDA-enabled OpenCV for preprocessing.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Inference optimization:</strong> Executed YOLO/PyTorch models with frames kept predominantly on GPU, reducing CPU↔GPU transfer overhead.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Lifecycle &amp; operations:</strong> Supported controlled restarts, hot configuration reloads via a custom DSL, and graceful shutdowns in 24/7 environments.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Observability:</strong> Measured per-stage pipeline latency and monitored GPU, VRAM, RAM, and CPU utilization under sustained load.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Technical impact:</strong> Migrated from a CPU-bound solution to GPU acceleration, enabling real-time stream retransmission where it was previously not feasible.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span>
+                            <a href="https://mrtc101.github.io/stream-inference-engine/" class="link-accent transition-colors" target="_blank">
+                                View Project →
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
 
-    achievements_and_languages:
-      - bullet: "Highest GPA (8.7 on a ten-point scale) in the Computer Science program, Class of 2024."
-      - bullet: "Ranked among the top 15 engineering students at UNCUYO (2024), based on academic GPA."
-      - bullet: "English: Upper-Intermediate (B2), Cambridge certified."
+            <!-- Municipalidad -->
+            <div class="mb-10 timeline-dot">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-100">
+                            <a href="https://www.godoycruz.gob.ar/" class="link-accent transition-colors" target="_blank">Municipality of Godoy Cruz</a>
+                            <span class="text-gray-400"> · Web Developer</span>
+                        </h3>
+                    </div>
+                    <span class="text-gray-400 text-sm md:text-base mt-1 md:mt-0">June 2025 – present</span>
+                </div>
+                
+                <p class="text-gray-300 mb-1 leading-relaxed">8 months</p>
 
-design:
-  theme: classic
-  page:
-    top_margin: 1.2cm
-    bottom_margin: 1.2cm
-    left_margin: 1.3cm
-    right_margin: 1.2cm
+                <p class="text-gray-300 mb-4 leading-relaxed">
+                    Developed an internal web interface for chatting with an LLM to enable semantic querying
+                    of municipal regulations.
+                </p>
+                
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Frontend stack:</strong> React, Tailwind CSS, Bun.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <a href="https://github.com/MrtC101/digesto-semantic-chat" class="link-accent transition-colors font-medium" target="_blank">View Project →</a>
+                    </li>
+                </ul>
+            </div>
 
-  header:
-    alignment: left
-    photo_width: 2.8cm
-    photo_position: right
-    space_below_name: 0.35cm
+            <!-- Klari -->
+            <div class="mb-10 timeline-dot">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-100">
+                            <a href="https://klari.ai/" class="link-accent transition-colors" target="_blank">Klari Inc.</a>
+                            <span class="text-gray-400"> · Data Scientist Intern (200 hours)</span>
+                        </h3>
+                    </div>
+                    <span class="text-gray-400 text-sm md:text-base mt-1 md:mt-0">Jan 2025 – Feb 2025</span>
+                </div>
 
-  typography:
-      line_spacing: 0.7em
-      alignment: left
-      date_and_location_column_alignment: right
-      font_family:
-        body: Source Sans 0
-        name: Source Sans 3
-        headline: Source Sans 3
-        connections: Source Sans 3
-        section_titles: Source Sans 3
-      font_size:
-        body: 10pt
-        name: 28pt
-        headline: 10pt
-        connections: 9.5pt
-        section_titles: 1.25em
-      small_caps:
-        name: false
-        headline: false
-        connections: false
-        section_titles: false
-      bold:
-        name: true
-        headline: false
-        connections: false
-        section_titles: true
+                <p class="text-gray-300 mb-1 leading-relaxed">2 months</p>
+                
+                <p class="text-gray-300 mb-4 leading-relaxed">
+                    Designed and implemented a semantic analysis system for conversations generated by an LLM-based chatbot,
+                    aimed at extracting thematic patterns and producing actionable reports on user behavior and interaction quality.
+                </p>
+                
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">NLP pipeline:</strong> Semantic representation of conversations using embeddings.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Thematic analysis:</strong> Unsupervised clustering to extract conversational patterns.</span>
+                    </li>
+                </ul>
+            </div>
 
-  section_titles:
-    type: with_partial_line
-    space_above: 0.45cm
-    space_below: 0.25cm
+            <!-- CICDa -->
+            <div class="timeline-dot">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-100">
+                            <a href="https://sites.google.com/view/cicda/home" class="link-accent transition-colors" target="_blank">CICDa Research Group</a>
+                            <span class="text-gray-400"> · Thesis Research</span>
+                        </h3>
+                    </div>
+                    <span class="text-gray-400 text-sm md:text-base mt-1 md:mt-0">Jan 2024 – Jan 2025</span>
+                </div>
 
-locale:
-  language: english
+                <p class="text-gray-300 mb-1 leading-relaxed">1 year 1 month</p>
+                
+                <p class="text-gray-300 mb-4 leading-relaxed">
+                    Conducted publication-oriented research focused on satellite image segmentation for post-disaster
+                    building damage detection and estimation, using temporal image comparison and Siamese deep learning
+                    architectures.
+                </p>
+                
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">xBD dataset:</strong> Trained on ~2,400 VHR satellite images for Building Damage Assessment tasks.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">End-to-end pipeline:</strong> Preprocessing, training, inference, and post-processing for semantic segmentation and multitemporal structural change detection.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Computer vision modeling:</strong> Trained deep learning models for post-disaster building semantic segmentation.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Experimental evaluation:</strong> Quantitative analysis using classification and segmentation metrics (Precision, Recall, F1-score).</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <span><strong class="text-gray-200">Compute:</strong> Training executed on a High Performance Computing cluster with NVIDIA Tesla V100 GPUs.</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-violet-400 mt-1">•</span>
+                        <a href="https://github.com/MrtC101/Thesis_DL_for_BDA" class="link-accent transition-colors font-medium" target="_blank">View Project →</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-settings:
-  current_date: "2025-12-29"
+        <div class="section-divider"></div>
+
+        <!-- Education -->
+        <div class="section p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-white mb-8">Education</h2>
+            
+            <div class="timeline-dot">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-100">National University of Cuyo</h3>
+                        <p class="text-gray-300 mt-1">Bachelor of Computer Science</p>
+                    </div>
+                    <span class="text-gray-400 text-sm md:text-base mt-1 md:mt-0">2020 – 2024</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- Technical Skills -->
+        <div class="section p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-white mb-8">Technical Skills</h2>
+            
+            <div class="space-y-5">
+                <div>
+                    <h3 class="font-semibold text-gray-100 mb-3">Programming Languages:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">C/C++</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-gray-100 mb-3">AI &amp; ML:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Scikit-learn</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-gray-100 mb-3">Vision &amp; Data:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">CUDA</span>
+                        <span class="tag">GStreamer</span>
+                        <span class="tag">NVIDIA DeepStream</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-gray-100 mb-3">Tools:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Bun</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- Achievements and Languages -->
+        <div class="section p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-white mb-8">Achievements and Languages</h2>
+            
+            <ul class="space-y-3 text-gray-300">
+                <li class="flex gap-2">
+                    <span class="text-violet-400 mt-1">•</span>
+                    <span>Highest GPA (8.7 on a ten-point scale) in the Computer Science program, Class of 2024.</span>
+                </li>
+                
+                <li class="flex gap-2">
+                    <span class="text-violet-400 mt-1">•</span>
+                    <span>Ranked among the top 15 engineering students at UNCUYO (2024), based on academic GPA.</span>
+                </li>
+                
+                <li class="flex gap-2">
+                    <span class="text-violet-400 mt-1">•</span>
+                    <span>English: Upper-Intermediate (B2), Cambridge certified.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

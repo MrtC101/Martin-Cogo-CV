@@ -25,7 +25,7 @@
   typography-line-spacing: 0.7em,
   typography-alignment: "left",
   typography-date-and-location-column-alignment: right,
-  typography-font-family-body: "Source Sans 0",
+  typography-font-family-body: "Source Sans 3",
   typography-font-family-name: "Source Sans 3",
   typography-font-family-headline: "Source Sans 3",
   typography-font-family-connections: "Source Sans 3",
@@ -97,13 +97,17 @@
 )
 
 
+== Perfil
+
+Licenciado en Ciencias de la Computación, enfocado en IA y resolución de problemas en Visión Computacional. Experiencia en el diseño e implementación de sistemas de inferencia en tiempo real sobre streams de video, y entrenamiento de modelos de deep learning para aplicaciones de visión computacional.
+
 == Experiencia Laboral
 
 #regular-entry(
   [
     #strong[#link("https://mindcolab.com/")[Mind Colab]], Computer Scientist
 
-    #summary[Desarrollo de un motor de inferencia en tiempo real basado en pipelines de GStreamer, capaz de procesar hasta 6 streams RTSP en paralelo a 720p y 25 FPS, manteniendo frame drop \< 1\% bajo carga. El sistema adopta una arquitectura multiproceso con IPC mediante memoria compartida, orientada a minimizar copias innecesarias y reducir latencia.]
+    #summary[Desarrollo de un motor de inferencia en tiempo real basado en pipelines de GStreamer, capaz de procesar hasta 6 streams RTSP en paralelo a hasta 1080p y 25 FPS, manteniendo frame drop \< 1\% bajo carga. El sistema adopta una arquitectura multiproceso con IPC mediante memoria compartida, orientada a minimizar copias innecesarias y reducir latencia.]
 
     - #strong[Gestión de flujo]: Manejo de backpressure mediante colas en GStreamer para sostener throughput estable en escenarios de carga concurrente.
 
@@ -121,7 +125,7 @@
 
   ],
   [
-    Jul 2024 – presente
+    Jul 2025 – presente
 
   ],
 )
@@ -145,7 +149,7 @@
 
 #regular-entry(
   [
-    #strong[#link("https://klari.ai/")[Klari Inc.]], Científico de Datos
+    #strong[#link("https://klari.ai/")[Klari Inc.]], Científico de Datos (Pasantía, 200 hs)
 
     #summary[Diseño e implementación de un sistema de análisis semántico de conversaciones generadas por un chatbot basado en LLM, orientado a extraer patrones temáticos y generar reportes accionables sobre comportamiento y calidad de interacción.]
 

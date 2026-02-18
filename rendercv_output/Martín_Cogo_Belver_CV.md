@@ -8,16 +8,19 @@
 - GitHub: [MrtC101](https://github.com/MrtC101)
 
 
+# Summary
+Computer Science graduate with focus on Artificial Intelligence and Computer Vision problem solving. Proven experience designing and implementing real-time inference systems over video streams, as well as training deep learning models for computer vision applications.
+
 # Experience
-## **[Mind Colab](https://mindcolab.com/)**, Computer Science Engineer
+## **[Mind Colab](https://mindcolab.com/)**, Computer Scientist
 
-July 2024 – present
+July 2025 – present
 
 
 
-1 year 7 months
+7 months
 
-Designed and implemented a real-time inference engine built on GStreamer pipelines, capable of processing up to 6 parallel RTSP streams at 720p and 25 FPS, maintaining frame drop below 1% under load. The system follows a multi-process architecture with shared-memory IPC to minimize unnecessary copies and reduce end-to-end latency.
+Designed and implemented a real-time inference engine built on GStreamer pipelines, capable of processing up to 6 parallel RTSP streams at up to 1080p and 25 FPS, maintaining frame drop below 1% under load. The system follows a multi-process architecture with shared-memory IPC to minimize unnecessary copies and reduce end-to-end latency.
 
 
 
@@ -55,7 +58,7 @@ Developed an internal web interface for chatting with an LLM to enable semantic 
 
 
 
-## **[Klari Inc.](https://klari.ai/)**, Data Scientist
+## **[Klari Inc.](https://klari.ai/)**, Data Scientist Intern (200 hours)
 
 Jan 2025 – Feb 2025
 
